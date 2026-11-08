@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinese-clause-segmentation"
+version = "0.1.0"
+description = "Lossless, explainable Chinese sentence and clause segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+tokenize = ["jieba>=0.42.1,<0.43"]
+dev = ["pytest>=8,<10", "build>=1,<2", "twine>=6,<7"]
+
+[project.scripts]
+chinese-clause = "chinese_clause_segmentation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

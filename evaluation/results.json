@@ -1,0 +1,351 @@
+{
+  "scope": "Invented developer-authored cases; not independent generalization validation",
+  "cases": 44,
+  "metrics": {
+    "all/clause/punctuation_baseline": {
+      "tp": 20,
+      "fp": 35,
+      "fn": 8,
+      "precision": 0.36363636363636365,
+      "recall": 0.7142857142857143,
+      "f1": 0.48192771084337355
+    },
+    "all/clause/tool": {
+      "tp": 23,
+      "fp": 1,
+      "fn": 5,
+      "precision": 0.9583333333333334,
+      "recall": 0.8214285714285714,
+      "f1": 0.8846153846153847
+    },
+    "all/sentence/punctuation_baseline": {
+      "tp": 9,
+      "fp": 24,
+      "fn": 5,
+      "precision": 0.2727272727272727,
+      "recall": 0.6428571428571429,
+      "f1": 0.3829787234042553
+    },
+    "all/sentence/tool": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1": 0.962962962962963
+    },
+    "daily/clause/punctuation_baseline": {
+      "tp": 4,
+      "fp": 4,
+      "fn": 2,
+      "precision": 0.5,
+      "recall": 0.6666666666666666,
+      "f1": 0.5714285714285715
+    },
+    "daily/clause/tool": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "daily/sentence/punctuation_baseline": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "daily/sentence/tool": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "medical/clause/punctuation_baseline": {
+      "tp": 3,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666
+    },
+    "medical/clause/tool": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "medical/sentence/punctuation_baseline": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 1.0,
+      "f1": 0.0
+    },
+    "medical/sentence/tool": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "mixed/clause/punctuation_baseline": {
+      "tp": 3,
+      "fp": 14,
+      "fn": 3,
+      "precision": 0.17647058823529413,
+      "recall": 0.5,
+      "f1": 0.2608695652173913
+    },
+    "mixed/clause/tool": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "mixed/sentence/punctuation_baseline": {
+      "tp": 3,
+      "fp": 14,
+      "fn": 3,
+      "precision": 0.17647058823529413,
+      "recall": 0.5,
+      "f1": 0.2608695652173913
+    },
+    "mixed/sentence/tool": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "news/clause/punctuation_baseline": {
+      "tp": 4,
+      "fp": 5,
+      "fn": 0,
+      "precision": 0.4444444444444444,
+      "recall": 1.0,
+      "f1": 0.6153846153846153
+    },
+    "news/clause/tool": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    "news/sentence/punctuation_baseline": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285715
+    },
+    "news/sentence/tool": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "review/clause/punctuation_baseline": {
+      "tp": 4,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.5714285714285714,
+      "recall": 1.0,
+      "f1": 0.7272727272727273
+    },
+    "review/clause/tool": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75
+    },
+    "review/sentence/punctuation_baseline": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "review/sentence/tool": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "social/clause/punctuation_baseline": {
+      "tp": 2,
+      "fp": 6,
+      "fn": 3,
+      "precision": 0.25,
+      "recall": 0.4,
+      "f1": 0.3076923076923077
+    },
+    "social/clause/tool": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889
+    },
+    "social/sentence/punctuation_baseline": {
+      "tp": 2,
+      "fp": 6,
+      "fn": 2,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333333333333333
+    },
+    "social/sentence/tool": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "errors": [
+    {
+      "case": 11,
+      "domain": "daily",
+      "level": "clause",
+      "text": "我很喜欢这里她很讨厌这里",
+      "expected": [
+        "我很喜欢这里",
+        "她很讨厌这里"
+      ],
+      "actual": [
+        "我很喜欢这里她很讨厌这里"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        6
+      ]
+    },
+    {
+      "case": 18,
+      "domain": "news",
+      "level": "clause",
+      "text": "公司发布公告；政府尚未作出回应。",
+      "expected": [
+        "公司发布公告；",
+        "政府尚未作出回应。"
+      ],
+      "actual": [
+        "公司发布公告；政府尚未作出回应。"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        7
+      ]
+    },
+    {
+      "case": 24,
+      "domain": "social",
+      "level": "clause",
+      "text": "今天好累但明天还要加班",
+      "expected": [
+        "今天好累",
+        "但明天还要加班"
+      ],
+      "actual": [
+        "今天好累但明天还要加班"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        4
+      ]
+    },
+    {
+      "case": 30,
+      "domain": "review",
+      "level": "clause",
+      "text": "质量好，价格低。",
+      "expected": [
+        "质量好，",
+        "价格低。"
+      ],
+      "actual": [
+        "质量好，价格低。"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        4
+      ]
+    },
+    {
+      "case": 42,
+      "domain": "mixed",
+      "level": "sentence",
+      "text": "He said “Go!”然后我们出发了。",
+      "expected": [
+        "He said “Go!”",
+        "然后我们出发了。"
+      ],
+      "actual": [
+        "He said “Go!”然后我们出发了。"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        13
+      ]
+    },
+    {
+      "case": 42,
+      "domain": "mixed",
+      "level": "clause",
+      "text": "He said “Go!”然后我们出发了。",
+      "expected": [
+        "He said “Go!”",
+        "然后我们出发了。"
+      ],
+      "actual": [
+        "He said “Go!”然后我们出发了。"
+      ],
+      "extra_boundaries": [],
+      "missed_boundaries": [
+        13
+      ]
+    },
+    {
+      "case": 43,
+      "domain": "review",
+      "level": "clause",
+      "text": "我很喜欢苹果，价格很贵的那种。",
+      "expected": [
+        "我很喜欢苹果，价格很贵的那种。"
+      ],
+      "actual": [
+        "我很喜欢苹果，",
+        "价格很贵的那种。"
+      ],
+      "extra_boundaries": [
+        7
+      ],
+      "missed_boundaries": []
+    }
+  ]
+}
