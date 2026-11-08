@@ -1,6 +1,6 @@
 # chinese-clause-segmentation
 
-可解释、保留原文的中文 Sentence / Clause 规则切分工具。适用于新闻、评论、口语叙述和中英混合文本的初步处理，提供 general / medical 两种模式。v0.1.0 是开发验证版，尚无独立真实语料验证，不能称为广泛中文泛化已经完成。
+可解释、保留原文的中文 Sentence / Clause 规则切分工具。适用于新闻、评论、口语叙述和中英混合文本的初步处理，提供 general / medical 两种模式。v0.1.0 是开发验证版，尚无独立真实语料验证。
 
 ## 安装
 
