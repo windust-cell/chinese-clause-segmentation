@@ -2,19 +2,15 @@
 
 ## 只读审计
 
-审计对象为领域研究的正式 `segment_sentence_clauses.py`，其SHA-256为
-`f394e040c1f8bc7a092b1288ce5f7088212c9fbdef649a3ded5336ac7ca20a6a`。
-只读查阅了阶段记录、质量报告、内嵌回归、字段字典及依赖说明。未执行该脚本、未读取患者CSV正文、未修改科研正式产物。源位置只记在本地私有审计，不带入可提交文件。
-
-原流程：`main → run → validate_preflight → sentence_spans → clause_spans → tokenize_clause → 输出与核验`。
-Sentence内部为 `terminal_sentence_spans → recover_sentence_boundaries_from_unclosed_brackets → merge_hard_sentence_fragments`。
-Clause内部为 `split_whitespace_units → delimiter_clause_spans → merge_fragment_spans → merge_unbalanced_bracket_relation_pairs → recover_clause_boundaries_from_unclosed_brackets → refine_long_clause_span`。
+本工具参考早期领域研究切分流程的通用设计思想，采用独立模块重新实现。
+新文档不再列出原研究文件身份、精确哈希及内部调用链，必要追溯信息保存在仓库之外的私人审计记录中。既有历史提交与v0.1.0源码包仍含低风险指纹，未重写历史或替换附件。
+研究数据、内部回归实例和阶段材料不随工具分发。
 
 通用思想包括连续标点处理、括号保护、异常括号恢复、因果/条件依存保护、短片段保护、主语/时间/话题变化提示以及基于原文偏移的追溯。原有谓语词命中只是启发式，不能解释为句法分析。
 
 领域专用内容包括医疗角色/治疗阶段/症状词汇、医疗时间背景及长句阶段关键词、Topic分词保护词。不可迁移内容包括固定研究输入输出路径、输入哈希锁定、四组样本规模、按记录查找的回归与特定原句精确修补、患者片段、词表、报告与UID构造。
 
-原脚本的75项回归与真实记录绑定，不导入新仓库，也不在新工程中运行。新样例均独立编写；原测试数量不计入本工具测试数量。
+研究版本与真实记录绑定的回归不导入新仓库，也不在新工程中运行。新样例均独立编写；研究测试数量不计入本工具测试数量。
 
 ## 重构
 
@@ -26,4 +22,4 @@ Clause内部为 `split_whitespace_units → delimiter_clause_spans → merge_fra
 
 ## 权利与发布
 
-只迁移算法思想，代码独立重写。无法单靠本地文件确认原研究所有权/雇佣约定，故不擅自选择MIT或Apache许可，当前保留全部权利并仅私人交付。Git提交前审查文件允许清单、绝对路径、长数字ID、密钥模式和构建包内容；工具、环境与本地原文件审计在ignore目录内。
+只迁移算法思想，代码独立重写。代码权利仍需权利人确认；当前许可保留全部权利，公开可见性不等同于开放修改或再分发许可。是否公开及是否采用开源许可分别由权利人决定。Git提交前审查文件允许清单、绝对路径、长数字ID、密钥模式和构建包内容；工具、环境与本地原文件审计不参与发布。

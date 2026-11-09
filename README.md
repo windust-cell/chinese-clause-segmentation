@@ -53,6 +53,8 @@ python -m chinese_clause_segmentation input.txt --output output.jsonl
 
 Clause考虑逗号、分号、空白和少量明确话语转换词。只有两侧包含谓语/评价线索时才考虑切分；因果、条件、让步、递进等关系对及否定/程度片段优先保留。逗号内数字不当作分界；医疗领域词汇独立放在 `domains.py`。无标点句采用保守策略，不按字数强切。
 
+`general` 为默认模式，使用通用叙述和评价线索；`medical` 在相同算法上增加医生、护士、治疗、复查等通用医疗线索，不加载患者数据或私有停用词。两种模式都属于规则启发式，不是医学诊断或真实句法分析。
+
 ## 测试、评估与构建
 
 ```sh
@@ -74,4 +76,6 @@ python -m pip install dist/chinese_clause_segmentation-0.1.0-py3-none-any.whl
 
 本项目吸收早期领域研究切分流程的设计思想，采用独立模块重新实现；未复用研究数据、私有回归实例、记录级修补、固定路径、词表或人工标注。与科研封版版本不保证边界一致，不用于替换论文正式输出。迁移审计见 [设计记录](docs/DESIGN.md)。
 
-代码权利尚未经独立确认，当前 [LICENSE](LICENSE) 保留全部权利，仓库保持私人；待权利人确认后才选择开源许可。未打包第三方词典/语料，可选jieba由用户从其发行渠道独立安装。暂不发布PyPI。
+本项目的公开展示策略为 **All rights reserved（保留全部权利）**，不采用开放源代码许可证。源码公开可见不一般性授予使用、修改或再分发权利；GitHub服务条款允许的查看、Fork等平台行为不受限制，具体见 [LICENSE](LICENSE)。安装和运行示例用于说明技术接口，不单独授予使用许可。代码与合成样例的权属、机构或合作约定仍需权利人确认，选择这一发布策略不代表权属已经获得证明。未打包第三方词典/语料，可选jieba由用户独立安装并遵守其许可。暂不发布PyPI。
+
+**Public source visibility, all rights reserved.** This project is not offered under an open-source license. Source visibility does not grant general rights to use, modify, or redistribute the materials. Viewing and forking permitted by the GitHub Terms of Service remain permitted. Ownership and disclosure authority still require confirmation. The general tool is independent of the research version, and identical segmentation results are not guaranteed. No independent real-world generalization validation has been completed.
